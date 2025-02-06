@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import Button from "../../components/basic/button";
 import TextField from "../../components/basic/textfield";
 import { useState } from "react";
+import SwitchAuthRoute from "../../components/basic/switchroute";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -48,6 +50,8 @@ export default function Login() {
       </div>
 
       <Button text="SIGN IN" />
+
+      <SwitchAuthRoute question="Don&nsbp;t have an account?" link="signup" />
     </form>
   );
 }
