@@ -3,6 +3,7 @@ import Auth from "../layout/auth";
 import App from "../layout/app";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
+import Home from "../pages/home";
 
 export default function Route() {
   // setup your React application here.
@@ -26,6 +27,12 @@ export default function Route() {
     {
       path: "/",
       element: <App />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;
