@@ -1,6 +1,13 @@
-export default function Button({ text }) {
+export default function Button({ text, isDisabled = true }) {
   return (
-    <button className="w-full bg-[#b62e2e] px-7 py-5 font-bold cursor-pointer hover:bg-[#6b3131] transition-all duration-300 hover:scale-105">
+    <button
+      disabled={isDisabled}
+      className={`w-full px-7 py-5 font-bold transition-all duration-300 hover:scale-105 ${
+        isDisabled
+          ? "bg-transparent cursor-not-allowed"
+          : "bg-[#be2e2e] cursor-pointer"
+      }`}
+    >
       {text}
     </button>
   );

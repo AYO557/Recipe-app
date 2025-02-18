@@ -1,22 +1,56 @@
-import { Link } from "react-router-dom";
 import Button from "../../components/basic/button";
 import TextField from "../../components/basic/textfield";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SwitchAuthRoute from "../../components/basic/switchroute";
+import { useNavigate } from "react-router-dom";
+import findUser from "../../services/checkUser";
+import handleError from "../../utils/handleError";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  // retreive the user inputs
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleForm = (e) => {
+  // handle responses
+  const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
+
+  // toggle button disabled
+  useEffect(() => {
+    if (email !== "" && password !== "") {
+      setIsDisabled(false);
+    } else {
+      setIsDisabled(true);
+    }
+  }, [email, password]);
+
+  const handleForm = async (e) => {
     e.preventDefault();
 
-    const logindata = {
-      email,
-      password,
-    };
+    // setIsLoading(true);
+    // setIsDisabled(true);
 
-    console.log(logindata);
+    async function loginUser() {
+      try {
+        const res = await findUser(email, password);
+        const user = res;
+        console.log(user);
+
+        if (user === "valid password") {
+          localStorage.user = JSON.stringify(user);
+          navigate("/");
+        } else {
+          throw new Error("Invalid password");
+        }
+      } catch (err) {
+        handleError(err.message, setError, setIsDisabled, setIsLoading);
+      }
+    }
+
+    loginUser();
   };
 
   return (
@@ -49,9 +83,14 @@ export default function Login() {
         <p className="cursor-pointer">Recover Password</p>
       </div>
 
-      <Button text="SIGN IN" />
+      {isLoading ? (
+        <Button text="loading..." />
+      ) : (
+        <Button isDisabled={isDisabled} text="SIGNIN" />
+      )}
+      {error && <p className="text-red-200">{error}</p>}
 
-      <SwitchAuthRoute question="Don&nsbp;t have an account?" link="signup" />
+      <SwitchAuthRoute question="Don't have an account?" link="signup" />
     </form>
   );
 }

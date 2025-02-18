@@ -1,23 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-  const [count2, setCount2] = useState(0);
+  const navigate = useNavigate();
 
-  // runs on mount and rerenders
-  // useEffect(() => {
-  //   console.log("App has Mounted");
-  // });
-
-  // runs only once on mount
-  // useEffect(() => {
-  //   console.log("useEffect() called!");
-  // }, []);
-
-  // runs on mount and every time state changes
   useEffect(() => {
-    console.log("useEffect() called again!");
-  }, [count2]);
+    const user = localStorage.user;
+
+    if (!user) {
+      localStorage.clear();
+      navigate("/auth");
+      return;
+    }
+  }, []);
 
   return (
     <div className="h-screen bg-blue-400 text-white">
