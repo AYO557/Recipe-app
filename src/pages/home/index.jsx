@@ -1,12 +1,25 @@
+import { FaHamburger } from "react-icons/fa";
+import HomeHeader from "./components/home-header";
+import FilterSection from "./components/fiter-section";
+import RecipesSection from "./components/recipes-section";
+
 export default function Home() {
+  const filterItems = [
+    { name: "Burger", icon: FaHamburger },
+    { name: "Pizza", icon: FaHamburger },
+    { name: "Fries", icon: FaHamburger },
+    { name: "Shake", icon: FaHamburger },
+    { name: "Drink", icon: FaHamburger },
+    { name: "Dessert", icon: FaHamburger },
+    { name: "Other", icon: FaHamburger },
+  ];
+
   return (
-    <div className="h-50vh flex flex-col justify-center items-center pt-50 gap-10">
-      <h1 className="text-4xl">Welcome to the home page</h1>
-      <div>
-        <button className="bg-amber-600 text-white text-2xl font-bold py-5 px-10 cursor-pointer hover:bg-amber-400 transition-all duration-200 rounded-lg">
-          Log out
-        </button>
-      </div>
-    </div>
+    <article className="p-10">
+      <HomeHeader />
+      <FilterSection filterItems={filterItems} />
+
+      <RecipesSection filterItems={filterItems} />
+    </article>
   );
 }
