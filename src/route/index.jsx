@@ -44,7 +44,7 @@ export default function Route() {
           element: <Contact />,
         },
         {
-          path: ":recipe",
+          path: ":recipeId",
           element: <Recipe />,
         },
       ],

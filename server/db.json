@@ -11,66 +11,77 @@
   {
       "id": "1",
       "title": "Chocolate Chip Cookies",
+      "image": "https://images.pexels.com/photos/1325467/pexels-photo-1325467.jpeg?auto=compress&cs=tinysrgb&w=400",
       "ingredients": "12 cups all-purpose flour, 3/4 cup granulated sugar, 1/4 cup unsalted butter, 2 large eggs, 1 teaspoon vanilla extract, 1 cup boiling water, 1 cup chocolate chips",
       "instructions": "In a large bowl, cream together the flour and sugar until light and fluffy. Add the butter, eggs, and vanilla extract. Mix until well combined. Gradually add the boiling water, stirring constantly, until it becomes smooth. Stir in the chocolate chips. Cover and let sit for 10 minutes, or until the cookies have melted and are light and fluffy."
   },
   {
     "id": "2",
     "title": "Spaghetti Carbonara",
+    "image": "https://images.pexels.com/photos/20234576/pexels-photo-20234576/free-photo-of-steak-spaghetti.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load",
     "ingredients": "200g spaghetti, 100g pancetta, 2 large eggs, 50g Parmesan cheese, 1 clove garlic, Salt, Black pepper",
     "instructions": "Cook spaghetti in boiling salted water until al dente. In a pan, cook pancetta with garlic until crispy. In a bowl, whisk eggs and Parmesan cheese. Remove garlic from the pan, then toss hot spaghetti with pancetta. Off the heat, stir in the egg mixture until creamy. Season with black pepper and serve immediately."
   },
   {
     "id": "3",
     "title": "Classic Pancakes",
+    "image": "https://images.pexels.com/photos/3702403/pexels-photo-3702403.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "1 cup all-purpose flour, 2 tablespoons sugar, 1 teaspoon baking powder, 1/2 teaspoon salt, 1 cup milk, 1 large egg, 2 tablespoons melted butter",
     "instructions": "In a bowl, whisk flour, sugar, baking powder, and salt. In another bowl, mix milk, egg, and melted butter. Combine wet and dry ingredients. Heat a skillet and pour batter to form pancakes. Cook until bubbles form, then flip and cook until golden. Serve with syrup."
   },
   {
     "id": "4",
     "title": "Grilled Chicken Salad",
+    "image": "https://images.pexels.com/photos/14731641/pexels-photo-14731641.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "2 boneless chicken breasts, 4 cups mixed greens, 1/2 cup cherry tomatoes, 1/4 cup red onion, 1/4 cup feta cheese, 2 tablespoons olive oil, 1 tablespoon lemon juice, Salt, Pepper",
     "instructions": "Season chicken with salt and pepper. Grill until fully cooked, then slice. Toss greens, tomatoes, onion, and feta in a bowl. Whisk olive oil and lemon juice, then drizzle over salad. Top with grilled chicken and serve."
   },
   {
     "id": "5",
     "title": "Garlic Butter Shrimp",
+    "image": "https://images.pexels.com/photos/20593399/pexels-photo-20593399/free-photo-of-shrimps-in-bowl.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "500g shrimp, 3 tablespoons butter, 4 cloves garlic (minced), 1 teaspoon paprika, 1 tablespoon lemon juice, Salt, Black pepper, Chopped parsley",
     "instructions": "Melt butter in a pan over medium heat. Add garlic and sauté until fragrant. Add shrimp, paprika, salt, and pepper. Cook for 3-4 minutes until shrimp turns pink. Add lemon juice, toss, and garnish with parsley. Serve hot."
   },
   {
     "id": "6",
     "title": "Vegetable Stir-Fry",
+    "image": "https://images.pexels.com/photos/8956733/pexels-photo-8956733.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "1 cup broccoli florets, 1 cup sliced bell peppers, 1 cup carrots (julienned), 2 tablespoons soy sauce, 1 tablespoon sesame oil, 2 cloves garlic (minced), 1 teaspoon ginger (grated)",
     "instructions": "Heat sesame oil in a pan. Add garlic and ginger, sauté for 30 seconds. Add vegetables and stir-fry for 4-5 minutes. Pour in soy sauce and toss everything together. Serve with rice or noodles."
   },
   {
     "id": "7",
     "title": "Beef Tacos",
+    "image": "https://images.pexels.com/photos/7904958/pexels-photo-7904958.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "250g ground beef, 1 teaspoon chili powder, 1/2 teaspoon cumin, 1/2 teaspoon paprika, Salt, Black pepper, 4 small tortillas, 1/2 cup shredded lettuce, 1/4 cup diced tomatoes, 1/4 cup shredded cheese",
     "instructions": "Cook ground beef in a skillet until browned. Add chili powder, cumin, paprika, salt, and pepper. Cook for another 2 minutes. Warm tortillas, fill with beef, lettuce, tomatoes, and cheese. Serve with salsa."
   },
   {
     "id": "8",
     "title": "Tomato Basil Soup",
+    "image": "https://images.pexels.com/photos/1618921/pexels-photo-1618921.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "1 can (28 oz) crushed tomatoes, 1 cup vegetable broth, 1/2 cup heavy cream, 2 tablespoons butter, 1/2 cup chopped onion, 2 cloves garlic (minced), 1/4 cup fresh basil leaves",
     "instructions": "Sauté onions and garlic in butter until soft. Add tomatoes and broth, simmer for 10 minutes. Blend until smooth. Stir in cream and basil, season with salt and pepper. Serve warm."
   },
   {
     "id": "9",
     "title": "Oven-Baked Salmon",
+    "image": "https://images.pexels.com/photos/12232470/pexels-photo-12232470.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "2 salmon fillets, 2 tablespoons olive oil, 1 teaspoon lemon zest, 1 tablespoon lemon juice, 1 teaspoon garlic powder, Salt, Black pepper",
     "instructions": "Preheat oven to 400°F (200°C). Place salmon on a baking sheet, drizzle with olive oil and lemon juice. Season with garlic powder, salt, and pepper. Bake for 12-15 minutes. Serve with vegetables or rice."
   },
   {
     "id": "10",
     "title": "Mango Smoothie",
+    "image": "https://images.pexels.com/photos/4955257/pexels-photo-4955257.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "1 ripe mango (peeled and diced), 1/2 cup Greek yogurt, 1/2 cup orange juice, 1 tablespoon honey, 1/2 cup ice cubes",
     "instructions": "Blend all ingredients until smooth. Pour into a glass and serve chilled."
   },
   {
     "id": "11",
     "title": "Cheesy Garlic Bread",
+    "image": "https://images.pexels.com/photos/29173117/pexels-photo-29173117/free-photo-of-delicious-pasta-dish-with-garlic-bread.jpeg?auto=compress&cs=tinysrgb&w=400",
     "ingredients": "1 baguette, 4 tablespoons butter (melted), 2 cloves garlic (minced), 1/2 teaspoon Italian seasoning, 1 cup shredded mozzarella cheese, 1 tablespoon chopped parsley",
     "instructions": "Preheat oven to 375°F (190°C). Slice baguette in half, spread with butter and garlic. Sprinkle with Italian seasoning and cheese. Bake for 10 minutes until cheese is melted. Garnish with parsley and serve."
   }
