@@ -1,11 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import FavItemProvider from "../context/favItem";
 import Auth from "../layout/auth";
 import App from "../layout/app";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
 import Home from "../pages/home";
 import About from "../pages/about";
-import Contact from "../pages/contact";
+import Favorites from "../pages/favorites";
 import Recipe from "../pages/recipe";
 
 export default function Route() {
@@ -29,7 +30,11 @@ export default function Route() {
     // authorized users
     {
       path: "/",
-      element: <App />,
+      element: (
+        <FavItemProvider>
+          <App />
+        </FavItemProvider>
+      ),
       children: [
         {
           index: true,
@@ -40,8 +45,8 @@ export default function Route() {
           element: <About />,
         },
         {
-          path: "contact",
-          element: <Contact />,
+          path: "favorites",
+          element: <Favorites />,
         },
         {
           path: ":recipeId",

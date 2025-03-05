@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function MainNav({ onClick }) {
   return (
-    <aside className="bg-[#892121] py-10 flex flex-col justify-between items-center">
+    <aside className="bg-[#892121] py-10 flex flex-col justify-between items-center border-r-4 border-[#ee8a8a]">
       <nav className="px-5 py-10 w-full flex flex-col gap-5">
         <div className="flex items-center gap-2">
           <div className="h-20 w-28">
@@ -45,7 +45,7 @@ export default function MainNav({ onClick }) {
           </NavLink>
 
           <NavLink
-            to="/contact"
+            to="/favorites"
             className={({ isActive }) =>
               `py-5 pl-5 rounded-2xl ${
                 isActive
@@ -54,7 +54,7 @@ export default function MainNav({ onClick }) {
               }`
             }
           >
-            <li>Contact</li>
+            <li>Favorites</li>
           </NavLink>
         </menu>
       </nav>

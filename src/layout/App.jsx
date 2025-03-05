@@ -24,7 +24,7 @@ export default function App() {
     <main className="h-screen grid grid-cols-6">
       <MainNav onClick={logout} />
 
-      <div className="bg-[#f8dede] col-span-5">
+      <div className="bg-[#f8dede] col-span-5 h-full overflow-y-scroll">
         <Outlet />
       </div>
     </main>
